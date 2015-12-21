@@ -32,6 +32,6 @@
   routes.setRoutes(app);
 
   server.listen(app.get('port'), function(){
-    console.log('Quine server listening on port ' + app.get('port') + ' in mode ' + app.get('env'));
+    console.log('Node basic server listening on port ' + app.get('port') + ' in mode ' + app.get('env'));
   });
 }());
