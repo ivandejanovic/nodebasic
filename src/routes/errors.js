@@ -7,10 +7,10 @@ function setErrors(app) {
       res.send('<h2>Page not found</h2>');
     } else if (req.accepts('json')) {
       res.json({ error: 'Not found' });
+    } else {
+      res.type('txt');
+      res.send('Resource not found');
     }
-
-    res.type('txt');
-    res.send('Resource not found');
   });
 
   // 500
