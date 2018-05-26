@@ -1,0 +1,12 @@
+{
+    "env": {
+      "node": true,
+      "mocha": true,
+      "es6": true
+    },
+    "extends": ["airbnb"],
+    "rules": {
+      "comma-dangle": ["error", "never"]
+  }
+}
+  

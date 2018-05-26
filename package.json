@@ -1,21 +1,41 @@
 {
-  "name": "nodebasic",
-  "subdomain": "nodebasic",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "morgan": ">= 1.x",
-    "method-override": ">= 2.x",
-    "body-parser": ">= 1.x",
-    "errorhandler": ">= 1.x",
-    "express": ">= 4.x",
-    "jade": ">= 1.x",
-    "path": ">= 0.11.x"
-  },
-  "version": "1.0.0",
-  "engines": {
-    "node": ">= 6.x"
-  }
+	"name": "nodebasic",
+	"subdomain": "nodebasic",
+	"description": "Example basic node setup",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ivandejanovic/nodebasic.git"
+	},
+	"main": "src/index.js",
+	"scripts": {
+		"start": "node src/index.js"
+	},
+	"dependencies": {
+		"morgan": "^1.9.0",
+		"method-override": "^2.3.10",
+		"body-parser": "^1.18.3",
+		"errorhandler": "^1.5.0",
+		"express": "^4.16.3",
+		"pug": "^2.0.3",
+		"path": "^0.12.7"
+	},
+	"devDependencies": {
+		"prettier": "^1.12.1",
+		"eslint": "^4.19.1",
+		"eslint-config-airbnb": "^16.1.0",
+		"eslint-config-airbnb-base": "^12.1.0",
+		"eslint-plugin-import": "^2.12.0",
+		"eslint-plugin-jsx-a11y": "^6.0.3",
+		"eslint-plugin-react": "^7.8.2",
+		"grunt": "^1.0.0",
+		"grunt-contrib-clean": "^1.1.0",
+		"grunt-prettier": "^0.5.1",
+		"grunt-eslint": "^20.1.0",
+		"grunt-contrib-copy": "^1.0.0"
+	},
+	"version": "1.0.0",
+	"engines": {
+		"node": "^10.2.1"
+	}
 }
