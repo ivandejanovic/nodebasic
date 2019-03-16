@@ -41,6 +41,13 @@ module.exports = function init(grunt) {
           {
             expand: true,
             dot: true,
+            cwd: '',
+            dest: 'build/',
+            src: 'package-lock.json'
+          },
+          {
+            expand: true,
+            dot: true,
             cwd: 'views',
             dest: 'build/views/',
             src: '**'
