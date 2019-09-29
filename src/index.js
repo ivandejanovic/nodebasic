@@ -1,5 +1,4 @@
 const express = require('express');
-const http = require('http');
 const path = require('path');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
@@ -8,7 +7,6 @@ const errorhandler = require('errorhandler');
 const routes = require('./routes');
 
 const app = express();
-const server = http.createServer(app);
 const port = 8080;
 
 // all environments
@@ -29,7 +27,7 @@ if (app.get('env') === 'development') {
 
 routes.setRoutes(app);
 
-server.listen(app.get('port'), () => {
+app.listen(app.get('port'), () => {
   console.log(`Node basic server listening on port ${app.get('port')} in mode ${app.get('env')}`);
 });
 
