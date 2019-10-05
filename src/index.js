@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const errorhandler = require('errorhandler');
-const routes = require('./routes');
+const Router = require('./router/router').default;
 
 const app = express();
 const port = 8080;
@@ -25,7 +25,8 @@ if (app.get('env') === 'development') {
   app.locals.pretty = true;
 }
 
-routes.setRoutes(app);
+// eslint-disable-next-line no-new
+new Router(app);
 
 app.listen(app.get('port'), () => {
   console.log(`Node basic server listening on port ${app.get('port')} in mode ${app.get('env')}`);
