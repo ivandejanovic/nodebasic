@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const errorhandler = require('errorhandler');
-const Router = require('./router/router').default;
+const { Router } = require('./router/router');
 
 const app = express();
 const port = 8080;
