@@ -25,7 +25,6 @@ if (app.get('env') === 'development') {
   app.locals.pretty = true;
 }
 
-// eslint-disable-next-line no-new
 new Router(app);
 
 app.listen(app.get('port'), () => {
