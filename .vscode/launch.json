@@ -1,15 +1,18 @@
 {
     "version": "0.2.0",
     "configurations": [
-
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
+            "name": "npm: start",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run",
+                "start"
             ],
-            "program": "${workspaceFolder}/src/index.js"
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
         }
     ]
 }
